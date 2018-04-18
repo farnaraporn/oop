@@ -4,7 +4,6 @@ package projectoop;
 import java.util.Scanner;
 public class Projectoop {
 
-   
     public static void main(String[] args) {
         int number;
         do{
