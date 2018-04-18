@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package projectoop;
 
-/**
- *
- * @author Far
- */
 public class waterbill {
-    System.out.print("Enter number your phone : ");
-    System.out.print("123456 ");
+    public void w(){
+            System.out.print("Enter number your phone : ");
+            System.out.print("123456 ");
+            
+            
+            
+}
 }
