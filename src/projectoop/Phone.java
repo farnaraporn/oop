@@ -3,11 +3,14 @@ package projectoop;
 import java.util.Scanner;
 
 public abstract class Phone {
-
-    //public abstract void show();
-
+   
+   public abstract void show();
+   public int am;
+   public double am1;
+   public double ais =100;
+   public double dtac = 50;
     public void Enternumberphone() {
-
+        
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner np = new Scanner(System.in);
         int np1 = np.nextInt();
@@ -48,29 +51,43 @@ public abstract class Phone {
         }
 
     }//เม็ด
-
-    //interface showphone {
-
-     //   public void showphone();
-   // }
+    public void addmoney() {
+        
+        System.out.print("กรุณาใส่เบอร์ : ");
+        Scanner a = new Scanner(System.in);
+        am = a.nextInt();
+           
+        if(am == 369 ){
+            
+             System.out.println("369 AIS ");
+             System.out.println("ยอดเงินคงเหลือ "+ais+"บาท");
+        }else if (am == 147){
+            
+             System.out.println("147 DTAC ");
+             System.out.println("ยอดเงินคงเหลือ "+dtac+"บาท");
+        
+        }
+        
+        System.out.println("กรุณาเลือกจำนวณเงิน");
+        System.out.println("20");
+        System.out.println("30");
+        System.out.println("50");
+        System.out.println("90");
+        System.out.println("100");
+        System.out.println("150");
+        System.out.println("200");
+        System.out.print("กรุณาใส่จำนวนเงินที่ต้องการ : ");
+        Scanner a1 = new Scanner(System.in);
+        am1 = a1.nextDouble();
+      
+        
+    }
+    
+    
+    
+    
 }//คลาส
 
-//คลาสลูก 1
-//class monthly extends Phone implement showphone {
-  //  public void showphone(){
- //   System.out.print("ยอดค้างชำระคงเหลือ 0 บาท");
- //   }
 
- //   public void calculate() {
 
- //   }
-//}
 
-//คลาสลูก 2 
-class money {
-
-    public void add() {
-
-    }
-
-}
