@@ -31,5 +31,7 @@ public class money extends Phone {
             System.out.println("เท่ากับ" + totalt + "บาท");
         }
     }
+    
+    
 
 }
