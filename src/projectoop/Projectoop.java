@@ -16,8 +16,8 @@ public class Projectoop {
             number = n.nextInt();
 
             if (number == 1) {
-                //water ojw = water();{};
-                //ojw.pagewateruser();
+                waterbill wb = new waterbill();
+                wb.bill();
                 
             } else {
                 System.out.println("แบบรายเดือน กด 1");
@@ -25,9 +25,9 @@ public class Projectoop {
                 Scanner s = new Scanner(System.in);
                 System.out.print("Enter number : ");
                 select = s.nextInt();
+                monthly my = new monthly();
+                my.sphone();
                 
-                Phone p = new Phone() {};
-                p.Enternumberphone();
             }
 
         } while (number != 1 && number != 2);
