@@ -1,12 +1,15 @@
 
 package projectoop;
 
-public class waterbill {
-    public void w(){
-            System.out.print("Enter number your phone : ");
-            System.out.print("123456 ");
-            
-            
-            
+public class waterbill extends water753 {
+    public void bill(){
+            System.out.println("********************************");
+            System.out.println("***********Water Bill***********");
+            System.out.println("---------------------------------");
+        super.intowater1();
+        super.pagewateruser();
+        super.SumMeterWater();
+        super.price();
+        
 }
 }
