@@ -35,9 +35,14 @@ public class Projectoop {
                 
                 }
             }
+            
 
         } while (number != 1 && number != 2);
-
+       System.out.println("======================================================"); 
+       Customer cus =new Customer();
+       cus.member();
+       
+       
     }
-
+   
 }
