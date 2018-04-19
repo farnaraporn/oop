@@ -2,20 +2,26 @@
 
 package projectoop;
 import java.util.Scanner;
-public abstract class water753 implements intowater {
+public abstract class water753 implements intoWater {
  
     private double price = 0;
     private int wtEnd;
     private int wtStart;
     int sumwater = 0;
     
-    public void pagewateruser() {
+    
+    public void intowater1() {
         System.out.println("==================================================");
-        //public void intowater1() {System.out.printl("Water Bill Payment");}
+        System.out.println("================Water Bill Payment================");
         System.out.println("==================================================\n");
-        
-        System.out.println("--------------------------------------------------");
-        System.out.println("Enter Detail ");
+    }
+    
+    public void pagewateruser() {
+   
+        System.out.println("---------------------------------------------------");
+        System.out.println("-------------------Pay Your Bill-------------------");
+        System.out.println("---------------------------------------------------");
+        System.out.println("Enter Detail!! ");
         
         System.out.print("Enter Start Meter : ");
         Scanner waterStart = new Scanner(System.in);
@@ -27,7 +33,10 @@ public abstract class water753 implements intowater {
         System.out.println("--------------------------------------------------\n");
         
         
+        this.SumMeterWater();
         
+        System.out.print("Water Price = " +price);
+        this.price();
         
     }  
    
@@ -58,9 +67,6 @@ public abstract class water753 implements intowater {
 
 
     
-    interface intowater {
-         public void intowater1();
-    }
-
+    
 
 
