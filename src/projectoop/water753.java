@@ -3,6 +3,7 @@
 package projectoop;
 import java.util.Scanner;
 public abstract class water753 implements intowater {
+ 
     private double price = 0;
     private int wtEnd;
     private int wtStart;
@@ -14,13 +15,13 @@ public abstract class water753 implements intowater {
         System.out.println("==================================================\n");
         
         System.out.println("--------------------------------------------------");
-        System.out.println("????????????????????????????");
+        System.out.println("Enter Detail ");
         
-        System.out.print("??????????????? : ");
+        System.out.print("Enter Start Meter : ");
         Scanner waterStart = new Scanner(System.in);
         wtStart = waterStart.nextInt();
         
-        System.out.print("????????????? : ");
+        System.out.print("Enter End Meter : ");
         Scanner waterEnd = new Scanner(System.in);
         wtEnd = waterEnd.nextInt();
         System.out.println("--------------------------------------------------\n");
@@ -33,7 +34,7 @@ public abstract class water753 implements intowater {
     
         public void SumMeterWater(){
                 sumwater = wtEnd - wtStart;
-                System.out.println("????????????????? ??? : " +sumwater+ " ?????");
+                System.out.println("Total Meter : " +sumwater+ " Unit");
         }
         
         public double price(){
