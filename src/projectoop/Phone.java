@@ -5,17 +5,18 @@ import java.util.Scanner;
 public abstract class Phone {
    
    public abstract void show();
-   public int am;
+   public String am;
    public double am1;
    public double ais =100;
    public double dtac = 50;
+   public double TRUE = 20;
     public void Enternumberphone() {
         
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner np = new Scanner(System.in);
-        int np1 = np.nextInt();
+        String np1 = np.nextLine();
 
-        if (np1 == 123) {
+        if (np1.equals("0620640330")) {
             System.out.println("0620640330 TRUE-H ");
             System.out.println("ยอดค้างชำระรวม 990 บาท");
             System.out.println("- เดือนที่ 1 400 บาท");
@@ -25,13 +26,16 @@ public abstract class Phone {
             double ch = ch1.nextDouble();
 
             if (ch == 400) {
-                System.out.print("ยอดค้างชำระคงเหลือ 590 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 590 บาท");
             } else if (ch == 590) {
-                System.out.print("ยอดค้างชำระคงเหลือ 400 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 400 บาท");
             } else if (ch == 990) {
-                System.out.print("ยอดค้างชำระคงเหลือ 0 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 0 บาท");
+            }else{
+                double some = 990-ch;
+                System.out.println("ยอดค้างชำระคงเหลือ "+some+"บาท");
             }
-        } else if (np1 == 567) {
+        } else if (np1.equals("0844070204")) {
             System.out.println("0844070204 DTAC ");
             System.out.println("ยอดค้างชำระรวม 1290 บาท");
             System.out.println("- เดือนที่ 1 600 บาท");
@@ -41,11 +45,34 @@ public abstract class Phone {
             double ch = ch1.nextDouble();
 
             if (ch == 600) {
-                System.out.print("ยอดค้างชำระคงเหลือ 690 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 690 บาท");
             } else if (ch == 690) {
-                System.out.print("ยอดค้างชำระคงเหลือ 600 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 600 บาท");
             } else if (ch == 1290) {
-                System.out.print("ยอดค้างชำระคงเหลือ 0 บาท");
+                System.out.println("ยอดค้างชำระคงเหลือ 0 บาท");
+            }else{
+                double some = 1290-ch;
+                System.out.println("ยอดค้างชำระคงเหลือ "+some+"บาท");
+            }
+
+        }else if (np1.equals("0904810371")) {
+            System.out.println("0904810371 AIS ");
+            System.out.println("ยอดค้างชำระรวม 690 บาท");
+            System.out.println("- เดือนที่ 1 300 บาท");
+            System.out.println("- เดือนที่ 2 390 บาท");
+            System.out.print("กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
+            Scanner ch1 = new Scanner(System.in);
+            double ch = ch1.nextDouble();
+
+            if (ch == 300) {
+                System.out.println("ยอดค้างชำระคงเหลือ 390 บาท");
+            } else if (ch == 390) {
+                System.out.println("ยอดค้างชำระคงเหลือ 300 บาท");
+            } else if (ch == 690) {
+                System.out.println("ยอดค้างชำระคงเหลือ 0 บาท");
+            }else{
+                double some = 690-ch;
+                System.out.println("ยอดค้างชำระคงเหลือ "+some+"บาท");
             }
 
         }
@@ -55,16 +82,21 @@ public abstract class Phone {
         
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner a = new Scanner(System.in);
-        am = a.nextInt();
+        am = a.nextLine();
            
-        if(am == 369 ){
+        if(am.equals("0899763176")){
             
-             System.out.println("369 AIS ");
+             System.out.println("0899763176 AIS ");
              System.out.println("ยอดเงินคงเหลือ "+ais+"บาท");
-        }else if (am == 147){
+        }else if (am.equals("0948012333")){
             
-             System.out.println("147 DTAC ");
+             System.out.println("0948012333 DTAC ");
              System.out.println("ยอดเงินคงเหลือ "+dtac+"บาท");
+        
+        }else if (am.equals("0987125853")){
+            
+             System.out.println("0987125853 TRUE ");
+             System.out.println("ยอดเงินคงเหลือ "+TRUE+"บาท");
         
         }
         
