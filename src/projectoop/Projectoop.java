@@ -7,6 +7,7 @@ public class Projectoop {
     public static void main(String[] args) {
         int number;
         int select;
+        
         do {
 
             System.out.println("กด 1 ชำระบริการค่าน้ำ");
@@ -41,7 +42,7 @@ public class Projectoop {
        System.out.println("======================================================"); 
        Projectoop pp = new Projectoop();
        pp.membercus();
-      
+     
     }
     
      public void membercus() {
@@ -98,6 +99,4 @@ public class Projectoop {
      
      }
     
-    
-   
 }
