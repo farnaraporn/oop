@@ -7,15 +7,14 @@ public class Customer extends Phone {
     double vat;
     
     public void show() {
-        
+       
         
     }
 
     public void member() {
           
-          
           vat = super.ch + super.vatphone;
-          System.out.print("ค่าบริการทั้งหมด รวม vat : " + vat);
+          System.out.println("ค่าบริการทั้งหมด รวม vat : " + vat +"บาท");
             
             
             
