@@ -6,10 +6,12 @@ public abstract class Phone {
    
    public abstract void show();
    public String am;
-   public double am1;
+   public double am1,ch;
    public double ais =100;
    public double dtac = 50;
    public double TRUE = 20;
+   public double vatphone = 15;
+   
     public void Enternumberphone() {
         
         System.out.print("กรุณาใส่เบอร์ : ");
@@ -23,7 +25,7 @@ public abstract class Phone {
             System.out.println("- เดือนที่ 2 590 บาท");
             System.out.print("กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
             Scanner ch1 = new Scanner(System.in);
-            double ch = ch1.nextDouble();
+            ch = ch1.nextDouble();
 
             if (ch == 400) {
                 System.out.println("ยอดค้างชำระคงเหลือ 590 บาท");
@@ -42,7 +44,7 @@ public abstract class Phone {
             System.out.println("- เดือนที่ 2 690 บาท");
             System.out.print("กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
             Scanner ch1 = new Scanner(System.in);
-            double ch = ch1.nextDouble();
+             ch = ch1.nextDouble();
 
             if (ch == 600) {
                 System.out.println("ยอดค้างชำระคงเหลือ 690 บาท");
@@ -62,7 +64,7 @@ public abstract class Phone {
             System.out.println("- เดือนที่ 2 390 บาท");
             System.out.print("กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
             Scanner ch1 = new Scanner(System.in);
-            double ch = ch1.nextDouble();
+             ch = ch1.nextDouble();
 
             if (ch == 300) {
                 System.out.println("ยอดค้างชำระคงเหลือ 390 บาท");
@@ -111,6 +113,8 @@ public abstract class Phone {
         System.out.print("กรุณาใส่จำนวนเงินที่ต้องการ : ");
         Scanner a1 = new Scanner(System.in);
         am1 = a1.nextDouble();
+        
+        
       
         
     }
