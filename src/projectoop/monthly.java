@@ -1,7 +1,7 @@
 
 package projectoop;
 
-public class monthly extends Phone implements showphone {
+public abstract class monthly extends Phone implements showphone {
     monthly() {
         
     }
