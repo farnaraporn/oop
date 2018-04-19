@@ -22,6 +22,8 @@ public abstract class water implements intowater {
         int sumwater = 0;
         sumwater = wtEnd - wtStart;
         System.out.println("จำนวนหน่วยมิเตอร์ คือ : " +sumwater);
+        System.out.print("ลองงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงง");
+        
     }
     
 }    
