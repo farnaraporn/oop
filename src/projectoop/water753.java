@@ -4,23 +4,24 @@ package projectoop;
 import java.util.Scanner;
 public abstract class water753 implements intoWater {
  
-    private double price = 0;
+    
     private int wtEnd;
     private int wtStart;
     int sumwater = 0;
+    double price = 0;
     
     
     public void intowater1() {
-        System.out.println("==================================================");
-        System.out.println("================Water Bill Payment================");
-        System.out.println("==================================================\n");
+        System.out.println("==============================");
+        System.out.println("======Water Bill Payment======");
+        System.out.println("==============================\n");
     }
     
     public void pagewateruser() {
    
-        System.out.println("---------------------------------------------------");
-        System.out.println("-------------------Pay Your Bill-------------------");
-        System.out.println("---------------------------------------------------");
+        System.out.println("------------------------------");
+        System.out.println("---------Pay Your Bill--------");
+        System.out.println("------------------------------");
         System.out.println("Enter Detail!! ");
         
         System.out.print("Enter Start Meter : ");
@@ -30,23 +31,22 @@ public abstract class water753 implements intoWater {
         System.out.print("Enter End Meter : ");
         Scanner waterEnd = new Scanner(System.in);
         wtEnd = waterEnd.nextInt();
-        System.out.println("--------------------------------------------------\n");
-        
-        
+        System.out.println("-------------------------------\n");
+            
         this.SumMeterWater();
+        System.out.println("Total Meter : " +sumwater+ " Unit");
         
-        System.out.print("Water Price = " +price);
-        this.price();
         
     }  
    
     
-        public void SumMeterWater(){
+        public int SumMeterWater(){
                 sumwater = wtEnd - wtStart;
-                System.out.println("Total Meter : " +sumwater+ " Unit");
+                return sumwater;
         }
         
-        public double price(){
+        public void price(){
+            this.SumMeterWater();
             if(sumwater <=10){
                 price = sumwater*10.20;
             }
@@ -59,14 +59,6 @@ public abstract class water753 implements intoWater {
             else{
                 price = sumwater*21.20;
             }
-            
-            return price;
+            System.out.println("Water Price = " +price+ " THB");
         }
 }
-
-
-
-    
-    
-
-
