@@ -25,9 +25,15 @@ public class Projectoop {
                 Scanner s = new Scanner(System.in);
                 System.out.print("Enter number : ");
                 select = s.nextInt();
-                monthly my = new monthly();
-                my.sphone();
+                if(select==1){
+                    monthlybill mbill = new monthlybill();
+                    mbill.showmonthlybill();
+                } else if(select==2){
+                    money mn = new money();
+                    mn.show();
+                    mn.calculate();
                 
+                }
             }
 
         } while (number != 1 && number != 2);
