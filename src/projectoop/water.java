@@ -1,34 +1,64 @@
 
+
 package projectoop;
 import java.util.Scanner;
 public abstract class water implements intowater {
+    private double price = 0;
+    private int wtEnd;
+    private int wtStart;
+    int sumwater = 0;
+    
     public void pagewateruser() {
         System.out.println("==================================================");
-        System.out.println(into);
+        //public void intowater1() {System.out.printl("Water Bill Payment");}
         System.out.println("==================================================\n");
         
         System.out.println("--------------------------------------------------");
-        System.out.println("กรุณากรอกรายละเอียดการใช้น้ำ");
+        System.out.println("????????????????????????????");
         
-        System.out.print("มิเตอร์เริ่มต้น : ");
+        System.out.print("??????????????? : ");
         Scanner waterStart = new Scanner(System.in);
-        int wtStart = waterStart.nextInt();
+        wtStart = waterStart.nextInt();
         
-        System.out.print("มิเตอร์สิ้นสุด : ");
+        System.out.print("????????????? : ");
         Scanner waterEnd = new Scanner(System.in);
-        int wtEnd = waterEnd.nextInt();
+        wtEnd = waterEnd.nextInt();
         System.out.println("--------------------------------------------------\n");
         
-        int sumwater = 0;
-        sumwater = wtEnd - wtStart;
-        System.out.println("จำนวนหน่วยมิเตอร์ คือ : " +sumwater);
-        System.out.print("ลองงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงง");
         
-    }
+        
+        
+    }  
+   
     
-}    
+        public void SumMeterWater(){
+                sumwater = wtEnd - wtStart;
+                System.out.println("????????????????? ??? : " +sumwater+ " ?????");
+        }
+        
+        public double price(){
+            if(sumwater <=10){
+                price = sumwater*10.20;
+            }
+            else if(sumwater <=20){
+                price = sumwater*16;
+            }
+            else if(sumwater <=30){
+                price = sumwater*19;
+            }
+            else{
+                price = sumwater*21.20;
+            }
+            
+            return price;
+        }
+}
+
+
+
     
     interface intowater {
-         public static String into = "Water Bill Payment"; 
+         public void intowater1();
     }
+
 
