@@ -14,6 +14,7 @@ public abstract class Phone {
    
     public void Enternumberphone() {
         
+        
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner np = new Scanner(System.in);
         String np1 = np.nextLine();
@@ -81,6 +82,7 @@ public abstract class Phone {
 
     }//เม็ด
     public void addmoney() {
+        
         
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner a = new Scanner(System.in);
