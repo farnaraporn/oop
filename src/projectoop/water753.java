@@ -60,5 +60,7 @@ public abstract class water753 implements intoWater {
                 price = sumwater*21.20;
             }
             System.out.println("Water Price = " +price+ " THB");
+            System.out.println("Hello world");
         }
+        
 }
